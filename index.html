@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Filter</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      height: auto;
+      background-color: rgb(240, 124, 41);
+      padding: 10px;
+
+    }
+
+    h1,
+    h2,
+    p {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .sec-1 {
+      padding: 20px 200px 0px 200px;
+    }
+
+    .r {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px
+    }
+
+    .c-1 {
+      max-width: 300px;
+    }
+
+    .c {
+      max-width: 700px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .r>div {
+      Flex: 1 0 18%;
+    }
+
+    .img2 {
+      filter: blur(5px);
+    }
+
+    .img4 {
+      filter: brightness(0%);
+    }
+
+    .img5 {
+      filter: brightness(110%);
+    }
+
+    .img6 {
+      filter: brightness(200%);
+    }
+
+    .img7 {
+      filter: contrast(0%);
+    }
+
+    .img8 {
+      filter: contrast(50%);
+    }
+
+    .img9 {
+      filter: contrast(100%);
+    }
+
+    .img10 {
+      filter: contrast(200%);
+    }
+
+    .img11 {
+      filter: grayscale(0.3);
+    }
+
+    .img12 {
+      filter: grayscale(0.5);
+    }
+
+    .img13 {
+      filter: grayscale(1);
+    }
+
+    .img14 {
+      filter: hue-rotate(0deg);
+    }
+
+    .img15 {
+      filter: hue-rotate(120deg);
+    }
+
+    .img16 {
+      filter: hue-rotate(240deg);
+    }
+
+    .img17 {
+      filter: hue-rotate(360deg);
+    }
+
+    .img18 {
+      filter: invert(0%);
+    }
+
+    .img19 {
+      filter: invert(50%);
+    }
+
+    .img20 {
+      filter: invert(100%);
+    }
+
+    .img21 {
+      filter: invert(200%);
+    }
+
+    .img22 {
+      filter: saturate(0%);
+    }
+
+    .img23 {
+      filter: saturate(25%);
+    }
+
+    .img24 {
+      filter: saturate(50%);
+    }
+
+    .img25 {
+      filter: saturate(100%);
+    }
+
+    .img26 {
+      filter: sepia(0%);
+    }
+
+    .img27 {
+      filter: sepia(50%);
+    }
+
+    .img28 {
+      filter: sepia(100%);
+    }
+
+    .img29 {
+      filter: sepia(200%);
+    }
+
+    .img30 {
+      filter: drop-shadow(0px 0px 15px red);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="sec-1">
+    <div class="container">
+      <h1>Filter</h1>
+      <h2>Filter:Blur</h2>
+      <div class="r">
+        <div class="c">
+          <div class="img1">
+            <img src="photo/rose.png">
+          </div>
+          <p> original </p>
+        </div>
+        <div class="c">
+          <div class="img2">
+            <img src="photo/rose.png">
+          </div>
+          <p>filter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:brightness</h2>
+      <div class="r">
+        <div class="c-1">
+          <div class="img3">
+            <img src="photo/rose.png">
+          </div>
+          <p>original</p>
+        </div>
+        <div class="c-1">
+          <div class="img4">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img5">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img6">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:contrast</h2>
+      <div class="r">
+        <div class="c-1">
+          <div class="img3">
+            <img src="photo/rose.png">
+          </div>
+          <p>original</p>
+        </div>
+        <div class="c-1">
+          <div class="img7">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img8">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img9">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img10">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:grayscale</h2>
+      <div class="r">
+        <div class="c-1">
+          <div class="img3">
+            <img src="photo/rose.png">
+          </div>
+          <p>original</p>
+        </div>
+        <div class="c-1">
+          <div class="img11">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img12">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img13">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:hue-rotate</h2>
+      <div class="r">
+        <div class="c-1">
+          <div class="img3">
+            <img src="photo/rose.png">
+          </div>
+          <p>original</p>
+        </div>
+        <div class="c-1">
+          <div class="img14">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img15">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img16">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img17">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:invert</h2>
+      <div class="r">
+        <div class="c-1">
+          <div class="img3">
+            <img src="photo/rose.png">
+          </div>
+          <p>original</p>
+        </div>
+        <div class="c-1">
+          <div class="img18">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img19">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img20">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img21">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:saturate</h2>
+      <div class="r">
+        <div class="c-1">
+          <div class="img3">
+            <img src="photo/rose.png">
+          </div>
+          <p>original</p>
+        </div>
+        <div class="c-1">
+          <div class="img22">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img23">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img24">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img25">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:sepia</h2>
+      <div class="r">
+        <div class="c-1">
+          <div class="img3">
+            <img src="photo/rose.png">
+          </div>
+          <p>original</p>
+        </div>
+        <div class="c-1">
+          <div class="img26">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img27">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img28">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+        <div class="c-1">
+          <div class="img29">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="sec-1">
+    <div class="container">
+      <h2>Filter:Dropshadow</h2>
+      <div class="r">
+        <div class="c">
+          <div class="img1">
+            <img src="photo/rose.png">
+          </div>
+          <p> original </p>
+        </div>
+        <div class="c">
+          <div class="img30">
+            <img src="photo/rose.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
